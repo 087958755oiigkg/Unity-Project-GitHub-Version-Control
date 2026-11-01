@@ -7,7 +7,8 @@
 - 使用範本：課堂 Unity AI Project Template v0.2。
 - Git 工具：Git for Windows 2.51.0（PowerShell 命令列），由 AI 協助執行與檢查。
 - 目標：將空的 Unity 專案與學習筆記上傳到自己的公開 GitHub Repository。
-- Repository 網址：**待填入自己的 Repository 網址，目前尚未 Push。**
+- GitHub 帳號：`087958755oiigkg`。
+- Repository 網址：[Unity-Project-GitHub-Version-Control](https://github.com/087958755oiigkg/Unity-Project-GitHub-Version-Control)（Push 狀態見下方紀錄）。
 
 ## Step-by-step 操作紀錄
 
@@ -32,15 +33,14 @@ git log --oneline
 
 首次 Commit：`21c5bcc`。提交前已確認快取資料夾不在追蹤清單內。這些本機操作由 AI 協助完成，需自行閱讀與理解命令用途。
 
-### 3. 連接 GitHub（待完成）
+### 3. 連接 GitHub（已建立公開 Repository）
 
-接下來使用自己的 GitHub 帳號建立 **Public** Repository。因為本機已有專案與 README，建立遠端時不另外初始化 README、`.gitignore` 或 License，以免產生另一份初始歷史。
+使用自己的 GitHub 帳號 `087958755oiigkg`，在瀏覽器建立 **Public** Repository：`Unity-Project-GitHub-Version-Control`。因為本機已有專案與 README，建立遠端時不另外初始化 README、`.gitignore` 或 License，以免產生另一份初始歷史。
 
-取得真正的 Repository 網址後，再將它設定為 `origin`：
+將 Repository 的 HTTPS 網址設定為 `origin`：
 
 ```powershell
-# 先將下方範例中的 YOUR-USERNAME 與 YOUR-REPOSITORY 換成自己的資料。
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git remote add origin https://github.com/087958755oiigkg/Unity-Project-GitHub-Version-Control.git
 git remote -v
 ```
 
@@ -64,22 +64,23 @@ git push -u origin main
 - 用瀏覽器無痕視窗開啟 Repository 網址，確認不需登入即可查看。
 - 將本文件的 Repository 網址與操作結果補齊、Commit 並再次 Push，最後繳交 Repository 網址。
 
-## 學習心得（待本人完成）
+## 學習心得
 
-下列是 AI 提供的概念說明草稿，**尚未代表我自己的學習心得**。繳交前需理解後，用自己的話改寫，並補上實際操作遇到的問題與解決方法。
+以下是我用自己的話整理的理解，並由 AI 協助放入 README：
 
-- **Commit**：把選進暫存區的變更保存成一筆本機版本紀錄，附上說明，方便之後比較修改或找回舊版本。沒有先 `git add` 的修改不會自動收進一般的 Commit。
-- **Push**：把本機分支上的 Commit 傳到 GitHub 等遠端儲存庫，讓老師或其他人能看到已提交的內容。只修改檔案、沒有 Commit 的內容不會隨 Push 上傳。
-- **Pull**：取得遠端分支的更新，並整合到目前的本機分支，讓本機跟上遠端的變更；遇到衝突時需要處理。本次尚未執行 Pull。
-- **我的實際心得與問題排除**：待本人填寫。
+- **Commit（提交）**：把目前的修改記錄在自己的電腦裡，像是存檔功能。
+- **Push（上傳）**：把電腦裡的版本上傳到 GitHub。
+- **Pull（下載）**：把 GitHub 上的最新版本同步到自己的電腦上。
+
+補充學習重點：Commit 前先用 `git add` 選擇要記錄的變更；Push 上傳的是 Commit；Pull 會取得並整合遠端更新，遇到衝突時需要處理。本次尚未執行 Pull。
 
 ## 交件檢查
 
 - [x] 版本檔記錄為 Unity 6000.3.17f1。
 - [x] 已追蹤必要的專案資料夾與 `.gitignore`。
 - [x] 至少完成一次本機 Commit。
-- [ ] README 心得已由本人理解並改寫。
-- [ ] Repository 屬於自己的帳號，且設定為 Public。
+- [x] README 心得已由本人提供，並由 AI 協助整理。
+- [x] Repository 屬於自己的帳號，且設定為 Public。
 - [ ] 已成功 Push，GitHub 上能看到專案與最新版 README。
 - [ ] 已使用無痕視窗確認免登入可查看。
 - [ ] 已填入並繳交自己的 Repository 網址。
